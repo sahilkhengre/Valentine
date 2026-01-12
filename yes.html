@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YAY 💘</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="confetti.js"></script>
+</head>
+<body onload="startConfetti()">
+
+<div class="card">
+  <h1>🥰 YAYYY!</h1>
+  <h2 id="name"></h2>
+  <p>You just made my heart the happiest 💕</p>
+  <p>💐 Happy Valentine’s Day 💐</p>
+  <p>I promise unlimited smiles 😘</p>
+</div>
+
+<script>
+document.getElementById("name").innerText =
+localStorage.getItem("valName") + ", you are my Valentine ❤️";
+</script>
+
+</body>
+</html>
