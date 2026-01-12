@@ -1,0 +1,49 @@
+body {
+  background: linear-gradient(135deg,#ff758c,#ff7eb3);
+  height:100vh;
+  margin:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family:sans-serif;
+}
+
+.card {
+  background:white;
+  padding:30px;
+  border-radius:25px;
+  width:90%;
+  max-width:320px;
+  text-align:center;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+input {
+  width:90%;
+  padding:10px;
+  border-radius:15px;
+  border:1px solid #ccc;
+  margin-bottom:15px;
+}
+
+.buttons {
+  margin-top:20px;
+}
+
+.yes, .no, button {
+  padding:10px 20px;
+  margin:10px;
+  border-radius:20px;
+  border:none;
+  font-size:16px;
+  cursor:pointer;
+}
+
+.yes {
+  background:#ff4d6d;
+  color:white;
+}
+
+.no {
+  background:#ddd;
+}

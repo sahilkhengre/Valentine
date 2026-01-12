@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Valentine?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<audio autoplay loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="card">
+  <h1>💘 Will you be my Valentine?</h1>
+  <input type="text" id="name" placeholder="Enter your name 💕">
+  <div class="buttons">
+    <button class="yes" onclick="goYes()">YES 💖</button>
+    <button class="no" onclick="location.href='no.html'">NO 💔</button>
+  </div>
+</div>
+
+<script>
+function goYes(){
+  const n = document.getElementById("name").value || "My Love";
+  localStorage.setItem("valName", n);
+  location.href = "yes.html";
+}
+</script>
+</body>
+</html>
